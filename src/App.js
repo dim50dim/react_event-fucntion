@@ -49,7 +49,7 @@ function App() {
       </section>
       <section>
         <h2>Task 2</h2>
-        <div className="task-2" onMouseEnter={task2} ></div>
+        <div  className={`task-2 ${isActive ? 'active' : ''}`} onMouseEnter={task2} ></div>
       </section>
       <section>
         <h2>Task 3</h2>
@@ -61,7 +61,7 @@ function App() {
       </section>
       <section>
         <h2>Task 5</h2>
-        <input type="checkbox" currentValue="55" />
+        <input type="checkbox" current="55" />
         <div className="out-5"></div>
       </section>
       <section>
