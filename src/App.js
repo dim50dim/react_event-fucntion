@@ -14,8 +14,9 @@ function App() {
   function task2() {
      setActive(true);
   }
-  function task3() {
-
+  function task3(e) {
+          console.log(e.target.value);
+          
   }
   function task4() {
 
@@ -53,7 +54,7 @@ function App() {
       </section>
       <section>
         <h2>Task 3</h2>
-        <input type="text" className="task-3" />
+        <input type="text" className="task-3" onInput={task3} />
       </section>
       <section>
         <h2>Task 4</h2>
