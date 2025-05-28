@@ -1,17 +1,18 @@
  import './App.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 
 
 function App() {
   let count4 = 0;
+  const [isActive,setActive] = useState(false);
 
   function task1() {
     console.log('task1');
     
   }
   function task2() {
-
+     setActive(true);
   }
   function task3() {
 
@@ -48,7 +49,7 @@ function App() {
       </section>
       <section>
         <h2>Task 2</h2>
-        <div className="task-2"></div>
+        <div className="task-2" onMouseEnter={task2} ></div>
       </section>
       <section>
         <h2>Task 3</h2>
