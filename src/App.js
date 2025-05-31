@@ -26,12 +26,11 @@ function App() {
     
   }
   function task5(e) {
-     if(e.target.checked) {
-      setOutput(e.target.value)
-      }else{
-        setOutput(0);
-      }
-     }
+    if (e.target.checked) {
+      setOutput(e.target.value);
+    } else {
+      setOutput(0);
+    }
   }
   function task6() {
 
@@ -71,7 +70,7 @@ function App() {
       </section>
       <section>
         <h2>Task 5</h2>
-        <input type="checkbox" current="55" />
+        <input type="checkbox" current="55" onChange={task5} />
         <div className="out-5"></div>
       </section>
       <section>
