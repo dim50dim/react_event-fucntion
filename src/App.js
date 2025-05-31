@@ -71,7 +71,7 @@ function App() {
       <section>
         <h2>Task 5</h2>
         <input type="checkbox" current="55" onChange={task5} />
-        <div className="out-5"></div>
+        <div className="out-5"> {output} </div>
       </section>
       <section>
         <h2>Task 6</h2>
