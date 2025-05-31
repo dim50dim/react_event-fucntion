@@ -7,6 +7,7 @@ function App() {
   let count4 = 0;
   const [isActive,setActive] = useState(false);
   const [isCount,setCount] = useState(0);
+  const [output,setOutput] = useState(0);
   function task1() {
     console.log('task1');
     
@@ -24,8 +25,13 @@ function App() {
     console.log(newCount);
     
   }
-  function task5() {
-
+  function task5(e) {
+     if(e.target.checked) {
+      setOutput(e.target.value)
+      }else{
+        setOutput(0);
+      }
+     }
   }
   function task6() {
 
