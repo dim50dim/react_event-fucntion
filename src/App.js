@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
   let count4 = 0;
   const [isActive,setActive] = useState(false);
-
+  const [isCount,setCount] = useState(0);
   function task1() {
     console.log('task1');
     
@@ -19,7 +19,10 @@ function App() {
           
   }
   function task4() {
-
+    const newCount = isCount + 1;
+    setCount(newCount);
+    console.log(newCount);
+    
   }
   function task5() {
 
@@ -58,7 +61,7 @@ function App() {
       </section>
       <section>
         <h2>Task 4</h2>
-        <button className="task-4">Count</button>
+        <button className="task-4" onClick={task4}  >Count</button>
       </section>
       <section>
         <h2>Task 5</h2>
